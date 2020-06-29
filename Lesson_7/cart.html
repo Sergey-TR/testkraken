@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styleCart.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Домашнее задание: урок № 6</h1>
+        <nav class="lesson center">
+            <ul class="menu">
+                <li class="menu__link"><a href="#" class="menu__list">ГЛАВНАЯ</a> </li>
+                <li class="menu__link"><a href="slider.html" class="menu__list">SLIDER</a> </li>
+                <li class="menu__link"><a href="cart.html" class="menu__list">CART</a> </li>
+            </ul>
+            <details>
+                <summary>my products <span class="much">0</span></summary>
+                <div class="cart">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>CLEAN</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <th>Итого</th>
+                            <td>
+                                <span class="total">0</span>
+                                <i class="fas fa-ruble-sign"></i>
+                            </td>
+                        </tfoot>
+                    </table>
+                    <div class="null"></div>
+                    <button class="allClean">clean products</button>
+                    <button class="goCart">go to cart</button>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <div class="product-box center">
+           <div class="bigCart center hidden">
+               <div class="bigCart__header">
+                  <div class="bigCart__header_id">
+                      <h5 class="header_id">id</h5>
+                  </div>
+                   <div class="bigCart__header_name">
+                       <h5 class="header_name">product name</h5>
+                   </div>
+                   <div class="bigCart__header_price">
+                       <h5 class="header_price">price</h5>
+                   </div>
+                   <div class="bigCart__header_count">
+                       <h5 class="header_count">count</h5>
+                   </div>
+                   <div class="bigCart__header_sum">
+                       <h5 class="header_sum">summ</h5>
+                   </div>
+                   <div class="bigCart__header_delete">
+                       <h5 class="header_delete">delete</h5>
+                   </div>
+               </div>
+               
+               <button class="back">back to products</button>
+               <button class="check">check out</button>
+           </div>
+            <div class="product">
+                <div class="product__name">
+                    <h3 class="product__name_h3">Blonde</h3>
+                </div>
+                <img class="product__img" src="img/product-2.png" alt="">
+                <div class="price">
+                    <span class="product__priceHead">price:</span>
+                    <span class="product__price">99</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <button type="button" class="product__btn" data-id="1" data-price="99" data-name="Blonde" data-img="<img src='img/product-2small.png'>">add to
+                    cart</button>
+            </div>
+            <div class="product">
+                <div class="product__name">
+                    <h3 class="product__name_h3">Man</h3>
+                </div>
+                <img class="product__img" src="img/product-3.png" alt="">
+                <div class="price">
+                    <span class="product__priceHead">price:</span>
+                    <span class="product__price">199</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <button type="button" class="product__btn" data-id="2" data-price="199" data-name="Man" data-img="<img src='img/product-3small.png'>">add to
+                    cart</button>
+            </div>
+            <div class="product">
+                <div class="product__name">
+                    <h3 class="product__name_h3">Brunette</h3>
+                </div>
+                <img class="product__img" src="img/product-4.png" alt="">
+                <div class="price">
+                    <span class="product__priceHead">price:</span>
+                    <span class="product__price">299</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </div>
+                <button type="button" class="product__btn" data-id="3" data-price="299" data-name="Brunette" data-img="<img src='img/product-4small.png'>">add to
+                    cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer__p">&copy; Все права защищены, лично мной</p>
+    </footer>
+    <script src="scripts/cartjs.js"></script>
+    <script src="scripts/bigCart.js"></script>
+</body>
+
+</html>

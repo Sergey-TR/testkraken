@@ -1,0 +1,221 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    height: 100vh
+    display: flex
+    flex-direction: column
+
+a
+    text-decoration: none
+
+.center
+    padding: 0 calc( 50% - 600px )
+
+.header
+    height: 100px
+    background-color: #eeeaea
+    &__h1
+        color: #4682B4
+        text-transform: uppercase
+        text-align: center
+        padding-top: 10px
+
+nav
+    height: 50px
+    display: flex
+
+.menu
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    width: 1050px
+    &__link
+        list-style-type: none
+        padding-top: 18px
+    &__list
+        color: darkblue
+        text-transform: uppercase
+        text-decoration: none
+        padding: 3px 20px
+    &__list:hover
+        color: #4682B4 
+        border-bottom: 3px solid #4682B4
+    &__list:active
+        color: #4682B4 
+        border-bottom: 3px solid #4682B4
+
+details
+    width: 200px
+    height: 36px
+    margin-right: 50px
+    margin-top: 9px
+    background-color: #4682B4
+    border-radius: 5px
+    position: relative
+
+summary
+    font-size: 18px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding-top: 8px
+    text-transform: uppercase
+    font-weight: 600
+    color: #ffffff
+    outline: none
+
+summary:hover
+        cursor: pointer
+
+table
+    font-size: 14px
+    border-collapse: collapse
+    text-align: center
+
+table td
+    border-bottom: 1px solid black
+    height: 30px
+th
+    width: 70px
+    height: 30px
+    border-bottom: 1px solid black
+
+.null
+    height: 80px
+
+.cart
+    width: 300px
+    min-height: 130px
+    z-index: 100
+    background: #eeeaea
+    position: absolute
+    right: 0
+    opacity: 0.9
+
+.productCleanBtn:hover 
+    cursor: pointer
+
+.allClean
+    width: 200px
+    height: 30px
+    border: none
+    outline: none
+    background-color: #4682B4
+    border-radius: 10px
+    color: white
+    font-size: 26px
+    cursor: pointer
+    position: absolute
+    bottom: 40px
+    left: 50px
+
+.allClean:hover 
+    background-color: #1E90FF
+
+.allClean:active
+    background-color: #4682B4
+
+.goCart
+    width: 200px
+    height: 30px
+    border: none
+    outline: none
+    background-color: #4682B4
+    border-radius: 10px
+    color: white
+    font-size: 26px
+    cursor: pointer
+    position: absolute
+    bottom: 0px
+    left: 50px
+
+.goCart:hover
+    background-color: #1E90FF
+
+.goCart:active
+    background-color: #4682B4
+
+main
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+.product-box
+    display: flex
+    justify-content: space-around
+    margin-top: 20px
+    width: 1100px
+
+.bigCart
+    display: flex
+    justify-content: space-around
+    margin-top: 20px
+    width: 1100px
+    height: 500px
+    background-color: #ffffff
+    opacity: 0.5
+    z-index: 10
+
+.product
+    width: 261px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__name
+        display: flex
+        margin-bottom: 16px
+        &_h3
+            text-transform: uppercase
+            color: #4682B4
+
+    &__price, 
+    &__priceHead
+        font-size: 20px
+        font-weight: bold
+        padding: 5px
+        text-transform: uppercase
+        color: #4682B4
+        
+    &__img
+        //display: none
+        width: 263px
+        height: 280px
+
+    &__btn
+        width: 250px
+        height: 36px
+        background-color: #4682B4
+        color: #ffffff
+        font-size: 24px
+        outline: none
+        cursor: pointer
+        border-radius: 20px
+        border: none
+    &__btn:hover
+        background-color: #1E90FF
+    &__btn:active
+        box-shadow: 2px 3px 5px 2px rgba(12, 60, 82, 0.16)
+        background-color: #4682B4
+
+.price
+    margin: 5px
+
+.fa-ruble-sign
+    color: #4682B4
+
+footer
+    height: 100px
+    background-color: #cccccc
+    display: flex
+    align-items: center
+    justify-content: center
+
+.footer__p
+    height: 100px
+    display: flex
+    align-items: center

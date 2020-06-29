@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding: 0 calc( 50% - 600px);
+}
+
+.header {
+  height: 100px;
+  background-color: #eeeaea;
+}
+
+.header__h1 {
+  color: #4682B4;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+}
+
+nav {
+  height: 50px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__link {
+  list-style-type: none;
+  padding-top: 18px;
+}
+
+.menu__list {
+  color: darkblue;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 3px 20px;
+}
+
+.menu__list:hover {
+  color: #4682B4;
+  border-bottom: 3px solid #4682B4;
+}
+
+.menu__list:active {
+  color: #4682B4;
+  border-bottom: 3px solid #4682B4;
+}
+
+/*main {
+  height: 100vh;
+}*/
+
+.slider {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fa {
+    position: absolute;
+    cursor: pointer;
+}
+
+.fa:hover {
+  color: white;
+}
+
+.fa:active {
+  color: #cccccc;
+}
+
+.fa-arrow-circle-left {
+    left: calc(50% - 550px);
+    color: #cccccc;
+    z-index: 10;
+    font-size: 50px;
+}
+
+.fa-arrow-circle-right {
+    left: calc(50% + 550px);
+    color: #cccccc;
+    z-index: 10;
+    font-size: 50px;
+}
+
+.slider__item {
+    position: absolute;
+    z-index: 100;
+    width: 800px;
+    height: 562px;
+}
+
+.slider__item img {
+  display: block;
+}
+
+.slider-hidden {
+   visibility: hidden;
+}
+
+footer {
+  height: 100px;
+  background-color: #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__p {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
