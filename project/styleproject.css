@@ -191,7 +191,7 @@ summary::-webkit-details-marker {
     color: #838383;
     /*'\25B6';
 	/*padding-right: 0.5em;*/
-}
+
 
 .browse_drop_menu {
     width: 262px;
@@ -336,6 +336,11 @@ summary::-webkit-details-marker {
     -webkit-transition: all 5s;
     transition: all 5s;
     opacity: 1;
+}
+
+.my_account_det[open] > .my_account_sum::after {
+    content: '\25B2';
+    color: #ffffff;
 }
 
 .my_account_sum {

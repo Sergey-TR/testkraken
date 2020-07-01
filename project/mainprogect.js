@@ -96,11 +96,17 @@ class List {
              this._render();
          }
          
-         let totalSumm = document.querySelectorAll('.product-price-span');
-         let total = 0;
-         totalSumm.forEach (function (elem) {
-             total += elem;
-         })
+         let totalSumm = 0;
+         let mutch = 0;
+        
+        for (let key in this.items) {
+            totalSumm += this.items[key].price * this.items[key].quantity;
+            mutch += this.items[key].quantity;
+        }
+    
+        document.querySelector('.span_total').textContent = totalSumm;
+        document.querySelector('.cart__total_span').textContent = mutch;
+        
     }
 
      remove(itemId) {
@@ -112,6 +118,13 @@ class List {
         }
         this._render();
          //console.log('попытка удалить ' + itemId)
+         let totalSumm = +document.querySelector('.span_total').textContent;
+         let mutch = +document.querySelector('.cart__total_span').textContent;
+            totalSumm -= find.price;
+            mutch --;
+    
+        document.querySelector('.span_total').textContent = totalSumm;
+        document.querySelector('.cart__total_span').textContent = mutch;
      }
  }
 
